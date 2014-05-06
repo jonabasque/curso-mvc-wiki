@@ -9,7 +9,7 @@ class Controller
      * @var null Database Connection
      */
     public $db = null;
-
+    public $view;
     /**
      * Whenever a controller is created, open a database connection too. The idea behind is to have ONE connection
      * that can be used by multiple models (there are frameworks that open one connection per model).
@@ -17,6 +17,9 @@ class Controller
     function __construct()
     {
         $this->openDatabaseConnection();
+
+	//Creamos el objeto vista
+       $this->view = new View();
     }
 
     /**
