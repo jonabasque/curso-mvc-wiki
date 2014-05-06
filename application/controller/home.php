@@ -25,6 +25,6 @@ class Home extends Controller
 
 	/* Como tenemos el objeto view... le marcamos la vista a mostrar y sin quitar el header y footer en este caso*/
 
-	$this->view->reder("home/index");
+	$this->view->render("home/index");
     }
 }
