@@ -11,15 +11,14 @@ clase en el directorio libs y hace un require de la misma al vuelo y nos evitamo
 function autoload($class) {
     // if file does not exist in LIBS_PATH folder [set it in config/config.php]
     $class_min = strtolower($class);
-    
     /*
     *Linux: Si esta en minuscula lo requiere. Si esta en mayula lo requiere. Y si no esta en ninguna hace el exit.
     *Window$: Si esta en minuscula o mayuscula lo requiere y no entra en el else if. Si no esta volvera a preguntar en vano y luego hara el exit.
     **/
-    if (file_exists(LIBS_PATH . $class_min . ".php") {
-        require LIBS_PATH . $class_min . ".php"; 
-    } else if (file_exists(LIBS_PATH .$class. ".php"){
-         require LIBS_PATH . $class . ".php"; 
+    if (file_exists(LIBS_PATH . $class_min . ".php")) {
+        require LIBS_PATH . $class_min . ".php";
+    } else if (file_exists(LIBS_PATH .$class. ".php")){
+         require LIBS_PATH . $class . ".php";
       }else{
 	 exit ('The file ' . $class_min . '.php is missing in the libs folder.');
     }
