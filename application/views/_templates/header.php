@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PHP MVC skeleton</title>
+    <title><?php if(property_exists($this, "title")) echo $this->title; else echo "Mi SuperWiki"; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->

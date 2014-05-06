@@ -1,3 +1,3 @@
 <div class="contenedor">
-    Estoy en el Index!!
+    Bienvenido al Index <?php echo $this->nombre; ?>
 </div>

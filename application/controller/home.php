@@ -24,7 +24,9 @@ class Home extends Controller
        //require 'application/views/_templates/footer.php';
 
 	/* Como tenemos el objeto view... le marcamos la vista a mostrar y sin quitar el header y footer en este caso*/
-
+	$this->view->nombre = "jonabasque";
+	$this->view->sitioweb = "otsogorrigaina.org";
+	$this->view->title = "Home de SuperWiki";
 	$this->view->render("home/index");
     }
 }
