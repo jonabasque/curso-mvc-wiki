@@ -20,7 +20,10 @@ ini_set("display_errors", 1);
  */
 define('URL', 'http://localhost/CURSOS/MVS-ORM/curso-mvc-wiki/');
 
-
+define('LIBS_PATH', 'application/libs/');
+define('CONTROLLER_PATH', 'application/controller/');
+define('MODELS_PATH', 'application/models/');
+define('VIEWS_PATH', 'application/views/');
 
 /**
  * Configuration for: Database
