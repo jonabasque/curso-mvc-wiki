@@ -18,9 +18,11 @@ if (file_exists('vendor/autoload.php')) {
 // load application config (error reporting etc.)
 require 'application/config/config.php';
 
+//cargar el autoload de clases
+require 'application/config/autoload.php';
 // load application class
-require 'application/libs/application.php';
-require 'application/libs/controller.php';
+//require 'application/libs/application.php';
+//require 'application/libs/controller.php';
 
 // start the application
 $app = new Application();
